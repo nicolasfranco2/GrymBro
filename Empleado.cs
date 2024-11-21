@@ -1,4 +1,5 @@
 ﻿using System;
+namespace Modelo.Empleados
 
 public class Empleado
 {

@@ -17,10 +17,16 @@ namespace GrymBro
         public LoginForm()
         {
             InitializeComponent();
-            login_button.Click += new EventHandler(login_button_Click);
+            if (login_button != null)
+            {
+                login_button.Click -= login_button_Click; // Remover cualquier asignación previa
+                login_button.Click += new EventHandler(login_button_Click); // Asignar el evento
+            }
+        
 
-        }
-        private bool Autenticar(string usuario, string contraseña)
+
+    }
+    private bool Autenticar(string usuario, string contraseña)
         {
             using (var connection = new NpgsqlConnection(connectionString))
             {

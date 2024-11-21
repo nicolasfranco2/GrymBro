@@ -66,5 +66,48 @@ namespace GrymBro
         {
 
         }
+
+        private void consulteMatriculaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consulta_matricula consultaMatricula = new Consulta_matricula();
+
+            // Mostrar el formulario
+            consultaMatricula.Show();
+        }
+
+        private void consultarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaEmpleados consultaEmpleados = new ConsultaEmpleados();
+
+            consultaEmpleados.Show();
+        }
+
+        private void consultarClasesDisponiblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaClases consultaClases = new ConsultaClases();
+
+            consultaClases.Show();
+        }
+
+        private void agregarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarUsuarioForms agregarUsuarioForms = new AgregarUsuarioForms();
+
+            agregarUsuarioForms.Show();
+        }
+
+        private void verificarPagosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VerificaPagos verificaPagos = new VerificaPagos();  
+
+            verificaPagos.Show();  
+        }
+
+        private void agendarClasesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgendarClase agendarClases = new AgendarClase();
+
+            agendarClases.Show();
+        }
     }
 }

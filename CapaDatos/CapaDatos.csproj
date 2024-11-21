@@ -91,6 +91,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Conexion\DbConnection.cs" />
+    <Compile Include="Modelo\Clases\clase.cs" />
+    <Compile Include="Modelo\Clases\ClaseDB.cs" />
+    <Compile Include="Modelo\Clases\InstructorService.cs" />
+    <Compile Include="Modelo\Empleados\Empleado.cs" />
+    <Compile Include="Modelo\Empleados\EmpleadoDB.cs" />
+    <Compile Include="Modelo\Miembros\Miembro.cs" />
+    <Compile Include="Modelo\Miembros\MiembroDB.cs" />
+    <Compile Include="Modelo\Pagos\Pago.cs" />
+    <Compile Include="Modelo\Pagos\PagoDB.cs" />
+    <Compile Include="Modelo\Usuarios\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
